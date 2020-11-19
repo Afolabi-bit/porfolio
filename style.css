@@ -79,13 +79,8 @@ a {
   transition: all 0.5s;
 }
 
-.disable {
-  cursor: not-allowed;
-}
-
 .header a.disable:hover {
   border-bottom: 1px solid var(--azure);
-  color: var(--rich-black);
 }
 
 .header li:nth-child(2) a {
@@ -513,7 +508,7 @@ footer.footer {
   color: var(--platinum);
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  line-height: 1.4em;
+  line-height: 1.3em;
 }
 
 .newsletter a {
@@ -559,7 +554,8 @@ footer.footer {
   font-weight: 400;
   letter-spacing: 0.6px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  line-height: 1.7em;
+  line-height: 1.4em;
+  margin-bottom: 5px;
 }
 
 .me p:last-child {
@@ -869,11 +865,16 @@ footer.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: unset;
     padding: 40px 20px;
   }
 
   .newsletter h2 {
     margin-bottom: 15px;
+  }
+
+  .newsletter p {
+    margin-bottom: 10px;
   }
 
   .footer-content {
@@ -891,14 +892,19 @@ footer.footer {
 
 @media (max-width: 400px) {
   .container {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   main .container {
     padding-bottom: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer .container {
+    padding-left: 5%;
+    padding-left: 5%;
   }
 
   main h1 {
